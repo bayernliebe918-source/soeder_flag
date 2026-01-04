@@ -9,7 +9,7 @@ from colorama import init, Fore, Back, Style
 
 class APP:
     def __init__(self):
-        self.size = int(input("Wie breit soll es sein: "))
+        self.size = int(10)
         self.breite = shutil.get_terminal_size().columns
         self.reps = int(self.breite / (self.size*2))
         self.rest = self.breite - (self.reps * (self.size*2))
